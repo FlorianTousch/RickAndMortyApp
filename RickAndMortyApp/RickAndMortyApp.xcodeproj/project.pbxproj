@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		81E0DA69279C76A6003D4A11 /* RickAndMortyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E0DA60279C76A5003D4A11 /* RickAndMortyApp.framework */; };
 		81E0DA6E279C76A6003D4A11 /* RickAndMortyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E0DA6D279C76A6003D4A11 /* RickAndMortyAppTests.swift */; };
+		81E0DA79279C78D4003D4A11 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E0DA78279C78D4003D4A11 /* RemoteFeedLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +26,7 @@
 		81E0DA60279C76A5003D4A11 /* RickAndMortyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RickAndMortyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E0DA68279C76A6003D4A11 /* RickAndMortyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RickAndMortyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E0DA6D279C76A6003D4A11 /* RickAndMortyAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyAppTests.swift; sourceTree = "<group>"; };
+		81E0DA78279C78D4003D4A11 /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 		81E0DA62279C76A5003D4A11 /* RickAndMortyApp */ = {
 			isa = PBXGroup;
 			children = (
+				81E0DA7A279C78D7003D4A11 /* Feed API */,
 			);
 			path = RickAndMortyApp;
 			sourceTree = "<group>";
@@ -77,6 +80,14 @@
 				81E0DA6D279C76A6003D4A11 /* RickAndMortyAppTests.swift */,
 			);
 			path = RickAndMortyAppTests;
+			sourceTree = "<group>";
+		};
+		81E0DA7A279C78D7003D4A11 /* Feed API */ = {
+			isa = PBXGroup;
+			children = (
+				81E0DA78279C78D4003D4A11 /* RemoteFeedLoader.swift */,
+			);
+			path = "Feed API";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 				TargetAttributes = {
 					81E0DA5F279C76A5003D4A11 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 					81E0DA67279C76A6003D4A11 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -187,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81E0DA79279C78D4003D4A11 /* RemoteFeedLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +346,7 @@
 		81E0DA73279C76A6003D4A11 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -353,6 +367,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -360,6 +375,7 @@
 		81E0DA74279C76A6003D4A11 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -387,6 +403,7 @@
 		81E0DA76279C76A6003D4A11 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -401,6 +418,7 @@
 		81E0DA77279C76A6003D4A11 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
