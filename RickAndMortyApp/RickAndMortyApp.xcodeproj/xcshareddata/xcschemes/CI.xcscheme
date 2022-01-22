@@ -27,6 +27,7 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
+      enableThreadSanitizer = "YES"
       codeCoverageEnabled = "YES"
       onlyGenerateCoverageForSpecifiedTargets = "YES">
       <CodeCoverageTargets>
@@ -35,6 +36,13 @@
             BlueprintIdentifier = "81E0DA5F279C76A5003D4A11"
             BuildableName = "RickAndMortyApp.framework"
             BlueprintName = "RickAndMortyApp"
+            ReferencedContainer = "container:RickAndMortyApp.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "81E0DA91279C8DB3003D4A11"
+            BuildableName = "RickAndMortyAppAPIEndToEndTests.xctest"
+            BlueprintName = "RickAndMortyAppAPIEndToEndTests"
             ReferencedContainer = "container:RickAndMortyApp.xcodeproj">
          </BuildableReference>
       </CodeCoverageTargets>
@@ -47,6 +55,17 @@
                BlueprintIdentifier = "81E0DA67279C76A6003D4A11"
                BuildableName = "RickAndMortyAppTests.xctest"
                BlueprintName = "RickAndMortyAppTests"
+               ReferencedContainer = "container:RickAndMortyApp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            testExecutionOrdering = "random">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "81E0DA91279C8DB3003D4A11"
+               BuildableName = "RickAndMortyAppAPIEndToEndTests.xctest"
+               BlueprintName = "RickAndMortyAppAPIEndToEndTests"
                ReferencedContainer = "container:RickAndMortyApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
