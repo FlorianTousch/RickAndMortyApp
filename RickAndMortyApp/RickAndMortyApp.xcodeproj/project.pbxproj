@@ -24,6 +24,7 @@
 		81E0DB32279EBDE3003D4A11 /* FeedViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E0DB31279EBDE3003D4A11 /* FeedViewControllerTests.swift */; };
 		81E0DB3B279EC437003D4A11 /* RickAndMortyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E0DA60279C76A5003D4A11 /* RickAndMortyApp.framework */; };
 		81E0DB3C279EC437003D4A11 /* RickAndMortyApp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 81E0DA60279C76A5003D4A11 /* RickAndMortyApp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		81E0DB40279EC512003D4A11 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E0DA8C279C856E003D4A11 /* XCTestCase+MemoryLeakTracking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -488,6 +489,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81E0DB32279EBDE3003D4A11 /* FeedViewControllerTests.swift in Sources */,
+				81E0DB40279EC512003D4A11 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
