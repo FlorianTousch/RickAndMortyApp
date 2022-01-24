@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeedImageCell" rowHeight="414" id="EP1-el-tCk">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeedImageCell" rowHeight="414" id="EP1-el-tCk" customClass="FeedImageCell" customModule="Prototype" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="49.5" width="414" height="414"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EP1-el-tCk" id="fMT-3v-SU2">
@@ -35,14 +35,47 @@
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYw-U1-HpV">
+                                            <rect key="frame" x="176.5" y="27" width="61.5" height="31.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Xtf-nN-fsx">
+                                            <rect key="frame" x="36" y="334.5" width="48" height="52.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zu3-Y3-7nO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="48" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ph-m3-ZLE">
+                                                    <rect key="frame" x="0.0" y="32" width="48" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="iYw-U1-HpV" firstAttribute="centerX" secondItem="fMT-3v-SU2" secondAttribute="centerX" id="2Nb-8x-UZy"/>
+                                        <constraint firstItem="iYw-U1-HpV" firstAttribute="top" secondItem="fMT-3v-SU2" secondAttribute="topMargin" constant="16" id="DhL-Ee-J1B"/>
+                                        <constraint firstItem="Xtf-nN-fsx" firstAttribute="leading" secondItem="fMT-3v-SU2" secondAttribute="leadingMargin" constant="16" id="QVc-Bk-goa"/>
                                         <constraint firstItem="0mI-gx-NcX" firstAttribute="top" secondItem="fMT-3v-SU2" secondAttribute="topMargin" constant="8" id="bfU-PW-owH"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Xtf-nN-fsx" secondAttribute="bottom" constant="16" id="eww-iy-kdo"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="0mI-gx-NcX" secondAttribute="bottom" constant="8" id="izs-LD-upq"/>
                                         <constraint firstItem="0mI-gx-NcX" firstAttribute="leading" secondItem="fMT-3v-SU2" secondAttribute="leadingMargin" constant="8" id="qVJ-wm-1Ci"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="0mI-gx-NcX" secondAttribute="trailing" constant="8" id="w1W-6P-3JV"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="feedImageView" destination="0mI-gx-NcX" id="x0x-oJ-Cbk"/>
+                                    <outlet property="genderLabel" destination="zu3-Y3-7nO" id="GAe-8b-yQh"/>
+                                    <outlet property="nameLabel" destination="iYw-U1-HpV" id="MjH-eG-9At"/>
+                                    <outlet property="statusLabel" destination="5ph-m3-ZLE" id="XeU-My-X19"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

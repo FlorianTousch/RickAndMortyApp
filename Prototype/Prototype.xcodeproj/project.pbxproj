@@ -14,6 +14,7 @@
 		81E0DB13279EABD4003D4A11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81E0DB11279EABD4003D4A11 /* LaunchScreen.storyboard */; };
 		81E0DB1B279EAFD2003D4A11 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E0DB1A279EAFD2003D4A11 /* FeedViewController.swift */; };
 		81E0DB1D279EB218003D4A11 /* FeedViewController+PrototypeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E0DB1C279EB218003D4A11 /* FeedViewController+PrototypeData.swift */; };
+		81E0DB1F279EB571003D4A11 /* FeedImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E0DB1E279EB571003D4A11 /* FeedImageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		81E0DB14279EABD4003D4A11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81E0DB1A279EAFD2003D4A11 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		81E0DB1C279EB218003D4A11 /* FeedViewController+PrototypeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedViewController+PrototypeData.swift"; sourceTree = "<group>"; };
+		81E0DB1E279EB571003D4A11 /* FeedImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				81E0DB08279EABD2003D4A11 /* SceneDelegate.swift */,
 				81E0DB1A279EAFD2003D4A11 /* FeedViewController.swift */,
 				81E0DB1C279EB218003D4A11 /* FeedViewController+PrototypeData.swift */,
+				81E0DB1E279EB571003D4A11 /* FeedImageCell.swift */,
 				81E0DB0C279EABD2003D4A11 /* Main.storyboard */,
 				81E0DB0F279EABD4003D4A11 /* Assets.xcassets */,
 				81E0DB11279EABD4003D4A11 /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 				81E0DB1B279EAFD2003D4A11 /* FeedViewController.swift in Sources */,
 				81E0DB09279EABD2003D4A11 /* SceneDelegate.swift in Sources */,
 				81E0DB1D279EB218003D4A11 /* FeedViewController+PrototypeData.swift in Sources */,
+				81E0DB1F279EB571003D4A11 /* FeedImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
