@@ -34,7 +34,7 @@ extension FeedImageCell {
         nameLabel.text = model.name
         statusLabel.text = model.status
         genderLabel.text = model.gender
-        feedImageView.image = UIImage(named: model.imageName)
+        fadeIn(UIImage(named: model.imageName))
     }
 }
 
