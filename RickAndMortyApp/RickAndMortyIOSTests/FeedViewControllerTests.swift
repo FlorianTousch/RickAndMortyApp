@@ -14,8 +14,7 @@ class FeedViewControllerTests: XCTestCase {
 
     func test_loadFeedActions_requestFeedFromLoader() {
         let (sut, loader) = makeSUT()
-        // No times for specification now but it's important !
-        XCTAssertEqual(loader.loadCallCount, 0, "Expect .... ")
+        XCTAssertEqual(loader.loadCallCount, 0)
         
         sut.loadViewIfNeeded()
         XCTAssertEqual(loader.loadCallCount, 1)
