@@ -21,8 +21,7 @@
 		81E0DA96279C8DB3003D4A11 /* RickAndMortyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E0DA60279C76A5003D4A11 /* RickAndMortyApp.framework */; };
 		81E0DA9C279C8EF9003D4A11 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E0DA8C279C856E003D4A11 /* XCTestCase+MemoryLeakTracking.swift */; };
 		81E0DB2D279EBDE3003D4A11 /* RickAndMortyIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E0DB25279EBDE3003D4A11 /* RickAndMortyIOS.framework */; };
-		81E0DB32279EBDE3003D4A11 /* RickAndMortyIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E0DB31279EBDE3003D4A11 /* RickAndMortyIOSTests.swift */; };
-		81E0DB33279EBDE3003D4A11 /* RickAndMortyIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 81E0DB27279EBDE3003D4A11 /* RickAndMortyIOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81E0DB32279EBDE3003D4A11 /* FeedViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E0DB31279EBDE3003D4A11 /* FeedViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,9 +63,8 @@
 		81E0DA92279C8DB3003D4A11 /* RickAndMortyAppAPIEndToEndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RickAndMortyAppAPIEndToEndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E0DA94279C8DB3003D4A11 /* RickAndMortyAppAPIEndToEndTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyAppAPIEndToEndTests.swift; sourceTree = "<group>"; };
 		81E0DB25279EBDE3003D4A11 /* RickAndMortyIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RickAndMortyIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		81E0DB27279EBDE3003D4A11 /* RickAndMortyIOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RickAndMortyIOS.h; sourceTree = "<group>"; };
 		81E0DB2C279EBDE3003D4A11 /* RickAndMortyIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RickAndMortyIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		81E0DB31279EBDE3003D4A11 /* RickAndMortyIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyIOSTests.swift; sourceTree = "<group>"; };
+		81E0DB31279EBDE3003D4A11 /* FeedViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,7 +199,6 @@
 		81E0DB26279EBDE3003D4A11 /* RickAndMortyIOS */ = {
 			isa = PBXGroup;
 			children = (
-				81E0DB27279EBDE3003D4A11 /* RickAndMortyIOS.h */,
 			);
 			path = RickAndMortyIOS;
 			sourceTree = "<group>";
@@ -209,7 +206,7 @@
 		81E0DB30279EBDE3003D4A11 /* RickAndMortyIOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				81E0DB31279EBDE3003D4A11 /* RickAndMortyIOSTests.swift */,
+				81E0DB31279EBDE3003D4A11 /* FeedViewControllerTests.swift */,
 			);
 			path = RickAndMortyIOSTests;
 			sourceTree = "<group>";
@@ -228,7 +225,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81E0DB33279EBDE3003D4A11 /* RickAndMortyIOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,7 +453,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81E0DB32279EBDE3003D4A11 /* RickAndMortyIOSTests.swift in Sources */,
+				81E0DB32279EBDE3003D4A11 /* FeedViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
