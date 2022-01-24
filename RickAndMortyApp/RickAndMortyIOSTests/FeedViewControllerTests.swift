@@ -43,6 +43,18 @@ class FeedViewControllerTests: XCTestCase {
         XCTAssertFalse(sut.isShowingLoadingIndicator)
     }
     
+    func test_loadFeedCompletion_renderSuccessfullyLoadedFeed() {
+        let item0 = makeImage(id: 0, name: "a name", status: "a status", gender: "a gender", image: anyURL())
+        //let item1 = makeImage(id: 0, name: "another name", status: "another status", gender: "another gender", image: anotherURL())
+        let (sut, loader) = makeSUT()
+        
+        sut.loadViewIfNeeded()
+        XCTAssertEqual(sut.numberOfRenderedFeedImageViews(), 0)
+        
+        loader.completeFeedLoading(with: [item0], at: 0)
+        XCTAssertEqual(sut.numberOfRenderedFeedImageViews(), 1)
+    }
+    
     // MARK: Helpers
     
     private func makeSUT(file: StaticString = #file, line: UInt = #line) -> (sut: FeedViewController, loader: LoaderSpy) {
@@ -51,6 +63,18 @@ class FeedViewControllerTests: XCTestCase {
         trackForMemoryLeaks(loader, file: file, line: line)
         trackForMemoryLeaks(sut, file: file, line: line)
         return (sut, loader)
+    }
+    
+    private func makeImage(id: Int, name: String, status: String, gender: String, image: URL) -> FeedItem {
+        return FeedItem(id: id, name: name, status: status, gender: gender, image: image)
+    }
+    
+    private func anyURL() -> URL {
+        return URL(string: "http://any-url.com")!
+    }
+    
+    private func anotherURL() -> URL {
+        return URL(string: "http://another-url.com")!
     }
     
     class LoaderSpy: FeedLoader {
@@ -64,8 +88,8 @@ class FeedViewControllerTests: XCTestCase {
             completions.append(completion)
         }
         
-        func completeFeedLoading(at index: Int) {
-            completions[index](.success([]))
+        func completeFeedLoading(with items: [FeedItem] = [], at index: Int) {
+            completions[index](.success(items))
         }
     }
 }
@@ -77,6 +101,14 @@ private extension FeedViewController {
     
     func simulateUserInitiatedFeedReload() {
         refreshControl?.simulatePullToRefresh()
+    }
+    
+    func numberOfRenderedFeedImageViews() -> Int {
+        return tableView.numberOfRows(inSection: feedImageSection)
+    }
+    
+    private var feedImageSection: Int {
+        return 0
     }
 }
 

@@ -82,14 +82,14 @@ class LoadFeedFromRemoteUseCaseTests: XCTestCase {
             name: "a name",
             status: "a status",
             gender: "a gender",
-            image: URL(string: "http://a-url.com")!)
+            imageURL: URL(string: "http://a-url.com")!)
         
         let item2 = makeItem(
             id: 1,
             name: "another name",
             status: "another status",
             gender: "another gender",
-            image: URL(string: "http://another-url.com")!)
+            imageURL: URL(string: "http://another-url.com")!)
         
         let items = [item1.model, item2.model]
         
@@ -127,15 +127,15 @@ class LoadFeedFromRemoteUseCaseTests: XCTestCase {
         return .failure(error)
     }
     
-    private func makeItem(id: Int, name: String, status: String, gender: String, image: URL) -> (model: FeedItem, json: [String: Any]) {
-        let item = FeedItem(id: id, name: name, status: status, gender: gender, image: image)
+    private func makeItem(id: Int, name: String, status: String, gender: String, imageURL: URL) -> (model: FeedImage, json: [String: Any]) {
+        let item = FeedImage(id: id, name: name, status: status, gender: gender, url: imageURL)
         
         let json = [
             "id": id,
             "name": name,
             "status": status,
             "gender": gender,
-            "image": image.absoluteString
+            "image": imageURL.absoluteString
         ] as [String: Any]
         
         return (item, json)
