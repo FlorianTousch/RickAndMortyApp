@@ -22,6 +22,8 @@
 		81E0DA9C279C8EF9003D4A11 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E0DA8C279C856E003D4A11 /* XCTestCase+MemoryLeakTracking.swift */; };
 		81E0DB2D279EBDE3003D4A11 /* RickAndMortyIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E0DB25279EBDE3003D4A11 /* RickAndMortyIOS.framework */; };
 		81E0DB32279EBDE3003D4A11 /* FeedViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E0DB31279EBDE3003D4A11 /* FeedViewControllerTests.swift */; };
+		81E0DB3B279EC437003D4A11 /* RickAndMortyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E0DA60279C76A5003D4A11 /* RickAndMortyApp.framework */; };
+		81E0DB3C279EC437003D4A11 /* RickAndMortyApp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 81E0DA60279C76A5003D4A11 /* RickAndMortyApp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +48,28 @@
 			remoteGlobalIDString = 81E0DB24279EBDE3003D4A11;
 			remoteInfo = RickAndMortyIOS;
 		};
+		81E0DB3D279EC437003D4A11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81E0DA57279C76A5003D4A11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81E0DA5F279C76A5003D4A11;
+			remoteInfo = RickAndMortyApp;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		81E0DB3F279EC437003D4A11 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				81E0DB3C279EC437003D4A11 /* RickAndMortyApp.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		81E0DA60279C76A5003D4A11 /* RickAndMortyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RickAndMortyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81E0DB3B279EC437003D4A11 /* RickAndMortyApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +142,7 @@
 				81E0DB26279EBDE3003D4A11 /* RickAndMortyIOS */,
 				81E0DB30279EBDE3003D4A11 /* RickAndMortyIOSTests */,
 				81E0DA61279C76A5003D4A11 /* Products */,
+				81E0DB3A279EC437003D4A11 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -211,6 +236,13 @@
 			path = RickAndMortyIOSTests;
 			sourceTree = "<group>";
 		};
+		81E0DB3A279EC437003D4A11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -293,10 +325,12 @@
 				81E0DB21279EBDE3003D4A11 /* Sources */,
 				81E0DB22279EBDE3003D4A11 /* Frameworks */,
 				81E0DB23279EBDE3003D4A11 /* Resources */,
+				81E0DB3F279EC437003D4A11 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				81E0DB3E279EC437003D4A11 /* PBXTargetDependency */,
 			);
 			name = RickAndMortyIOS;
 			productName = RickAndMortyIOS;
@@ -474,6 +508,11 @@
 			isa = PBXTargetDependency;
 			target = 81E0DB24279EBDE3003D4A11 /* RickAndMortyIOS */;
 			targetProxy = 81E0DB2E279EBDE3003D4A11 /* PBXContainerItemProxy */;
+		};
+		81E0DB3E279EC437003D4A11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81E0DA5F279C76A5003D4A11 /* RickAndMortyApp */;
+			targetProxy = 81E0DB3D279EC437003D4A11 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
