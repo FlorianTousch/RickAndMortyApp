@@ -37,6 +37,7 @@
 		81E0DB5D279F329D003D4A11 /* ValidateFeedCacheUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E0DB5C279F329D003D4A11 /* ValidateFeedCacheUseCaseTests.swift */; };
 		81E0DB5F279F3359003D4A11 /* FeedCacheTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E0DB5E279F3359003D4A11 /* FeedCacheTestHelpers.swift */; };
 		81E0DB61279F356F003D4A11 /* FeedCachePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E0DB60279F356F003D4A11 /* FeedCachePolicy.swift */; };
+		81E0DB63279F38A1003D4A11 /* CodableFeedStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E0DB62279F38A1003D4A11 /* CodableFeedStoreTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		81E0DB5C279F329D003D4A11 /* ValidateFeedCacheUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateFeedCacheUseCaseTests.swift; sourceTree = "<group>"; };
 		81E0DB5E279F3359003D4A11 /* FeedCacheTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCacheTestHelpers.swift; sourceTree = "<group>"; };
 		81E0DB60279F356F003D4A11 /* FeedCachePolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCachePolicy.swift; sourceTree = "<group>"; };
+		81E0DB62279F38A1003D4A11 /* CodableFeedStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableFeedStoreTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,6 +291,7 @@
 			children = (
 				81E0DB55279F3045003D4A11 /* Helpers */,
 				81E0DB4B279F2942003D4A11 /* CacheFeedUseCaseTests.swift */,
+				81E0DB62279F38A1003D4A11 /* CodableFeedStoreTests.swift */,
 				81E0DB58279F30AD003D4A11 /* LoadFeedFromCacheUseCaseTests.swift */,
 				81E0DB5C279F329D003D4A11 /* ValidateFeedCacheUseCaseTests.swift */,
 			);
@@ -528,6 +531,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81E0DB63279F38A1003D4A11 /* CodableFeedStoreTests.swift in Sources */,
 				81E0DA6E279C76A6003D4A11 /* LoadFeedFromRemoteUseCaseTests.swift in Sources */,
 				81E0DA88279C8300003D4A11 /* URLSessionHTTPClientTests.swift in Sources */,
 				81E0DB5B279F328C003D4A11 /* SharedTestHelpers.swift in Sources */,
