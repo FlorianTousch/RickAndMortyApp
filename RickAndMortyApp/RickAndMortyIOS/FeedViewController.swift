@@ -29,7 +29,6 @@ final public class FeedViewController: UITableViewController {
     @objc func load() {
         refreshControl?.beginRefreshing()
         loader?.load() { [weak self] result in
-            print("Floo", result)
             switch result {
             case let .success(feed):
                 self?.tableModel = feed
