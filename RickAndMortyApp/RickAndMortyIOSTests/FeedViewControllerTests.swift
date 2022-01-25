@@ -64,8 +64,8 @@ class FeedViewControllerTests: XCTestCase {
         return (sut, loader)
     }
     
-    private func makeImage(id: Int, name: String, status: String, gender: String, image: URL) -> FeedItem {
-        return FeedItem(id: id, name: name, status: status, gender: gender, image: image)
+    private func makeImage(id: Int, name: String, status: String, gender: String, image: URL) -> FeedImage {
+        return FeedImage(id: id, name: name, status: status, gender: gender, url: image)
     }
     
     private func anyURL() -> URL {
@@ -87,7 +87,7 @@ class FeedViewControllerTests: XCTestCase {
             completions.append(completion)
         }
         
-        func completeFeedLoading(with items: [FeedItem] = [], at index: Int) {
+        func completeFeedLoading(with items: [FeedImage] = [], at index: Int) {
             completions[index](.success(items))
         }
     }
