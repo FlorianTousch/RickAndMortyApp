@@ -1,6 +1,8 @@
 # RickAndMortyApp
 Challenge for Ippon
 
+⚠️ Challenge not finished
+
 ## Image Feed Feature Specs
 
 ### Story: Customer requests to see their image feed
